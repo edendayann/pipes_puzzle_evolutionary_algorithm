@@ -17,6 +17,7 @@ from eckity.subpopulation import Subpopulation
 def mut_val_getter(vec, idx):
     return vec.get_random_number_in_bounds(idx)
 
+
 def main():
     # start = time.time()
 
@@ -26,9 +27,9 @@ def main():
     #     FEN = (' '.join(sys.argv[1:]))
     #
     # logging.error(f"FEN inserted is: {FEN}\n\n")
-    size = 3
-    board_shapes = 'ILT/TLI/ITL'
-    optimal_solution = [1, 2, 3, 1, 2, 3, 1, 2, 3]
+    size = 4
+    board_shapes = 'LTLi/iiTL/LTTi/iLli'
+    optimal_solution = [3, 0, 2, 0, 2, 2, 1, 1, 3, 0, 2, 3, 2, 0, 1, 3]
     # Initialize the evolutionary algorithm
     algo = BoardEvolution(
         Subpopulation(creators=BoardCreator(size=size),
