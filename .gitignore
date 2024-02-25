@@ -1,0 +1,11 @@
+# Ignore compiled Python files
+*.pyc
+
+# Ignore virtual environment directories
+venv/
+
+# Ignore IDE specific files
+.vscode/
+
+board_use.py
+pygame_use.py
