@@ -1,18 +1,6 @@
 from abc import abstractmethod
 
 
-def matrix_to_vector_pos(pos, size):
-    if pos[0] < 0 or pos[0] >= size or pos[1] < 0 or pos[1] >= size:
-        return None
-    return pos[1] * size + pos[0]
-
-
-def vector_to_matrix_pos(pos, size):
-    if pos < 0 or pos >= size:
-        return None
-    return pos % size, pos // size
-
-
 class Shape:
     def __init__(self, state):
         self.state = state
@@ -37,6 +25,9 @@ class L_shape(Shape):
         else:
             return [(x, y + 1), (x + 1, y)]
 
+    def __str__(self):
+        return f"L({self.state})"
+
 
 class T_shape(Shape):
     def go_to_pos(self, x, y):
@@ -48,6 +39,9 @@ class T_shape(Shape):
             return [(x - 1, y), (x + 1, y), (x, y - 1)]
         else:
             return [(x - 1, y), (x, y - 1), (x, y + 1)]
+
+    def __str__(self):
+        return f"T({self.state})"
 
 
 class i_shape(Shape):
@@ -61,6 +55,9 @@ class i_shape(Shape):
         else:
             return [(x - 1, y)]
 
+    def __str__(self):
+        return f"i({self.state})"
+
 
 class l_shape(Shape):
     def go_to_pos(self, x, y):
@@ -68,3 +65,54 @@ class l_shape(Shape):
             return [(x, y - 1), (x, y + 1)]
         else:
             return [(x - 1, y), (x + 1, y)]
+
+    def __str__(self):
+        return f"l({self.state})"
+
+
+def matrix_to_vector_pos(pos, size):
+    if pos[0] < 0 or pos[0] >= size or pos[1] < 0 or pos[1] >= size:
+        return None
+    return pos[1] * size + pos[0]
+
+
+def vector_to_matrix_pos(pos, size):
+    return pos % size, pos // size
+
+
+def create_shapes_matrix(shapes, states):
+    matrix = []
+    i = 0
+    line = []
+    for letter in shapes:
+        if letter == '/':
+            matrix.append(line)
+            line = []
+        else:
+            line.append(letter_to_shape(letter)(states[i]))
+            i += 1
+    matrix.append(line)
+    return matrix
+
+
+def letter_to_shape(letter):
+    if letter == 'L':
+        return L_shape
+    elif letter == 'T':
+        return T_shape
+    elif letter == 'i':
+        return i_shape
+    else:  # letter- 'l'
+        return l_shape
+
+
+def matrix_test():
+    board_shapes = 'LTLi/iiTL/LTTi/iLli'
+    optimal_solution = [3, 0, 2, 0, 2, 2, 1, 1, 3, 0, 2, 3, 2, 0, 1, 3]
+    board = create_shapes_matrix(board_shapes, optimal_solution)
+    s = ", "
+    for line in board:
+        print(f"[{s.join([str(s) for s in line])}]")
+
+
+matrix_test()
