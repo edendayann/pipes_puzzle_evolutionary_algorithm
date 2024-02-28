@@ -115,4 +115,12 @@ def matrix_test():
         print(f"[{s.join([str(s) for s in line])}]")
 
 
-matrix_test()
+def print_shapes_matrix(shapes, solution):
+    board = create_shapes_matrix(shapes, solution)
+    s = ", "
+    for line in board:
+        print(f"[{s.join([str(s) for s in line])}]")
+
+
+if __name__ == "__main__":
+    matrix_test()

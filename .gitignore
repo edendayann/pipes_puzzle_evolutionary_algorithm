@@ -9,6 +9,3 @@ venv/
 
 # Ignore IDE specific files
 .idea/
-
-board_use.py
-pygame_use.py

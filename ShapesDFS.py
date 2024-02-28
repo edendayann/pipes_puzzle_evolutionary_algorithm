@@ -13,6 +13,7 @@ class Vertex:
         self.shape = shape
         self.color = color
         self.group = []
+        self.group_size = 0
 
 
 def create_vertices(shapes, states):
@@ -31,12 +32,17 @@ class ShapesDFS:
         self.vertices = create_vertices(shapes, states)
         self.groups = 0
         self.out_of_bounds = 0
+        self.current_group_size = 0
+        self.max_group_size = 0
 
     def DFS(self):
         for i, vertex in enumerate(self.vertices):
             if vertex.color == Color.WHITE:
+                self.current_group_size = 1
                 self.groups += 1  # for now we only need this. TODO decide if deleting the group attribute
                 self.DFS_visit(vertex, i)
+                if self.current_group_size > self.max_group_size:
+                    self.max_group_size = self.current_group_size
 
     # TODO- for now we only need number of groups
     def DFS_visit(self, u, i):
@@ -50,17 +56,21 @@ class ShapesDFS:
                 if v.color == Color.WHITE and i in v.shape.go_to(pos, self.size):
                     u.group.append(v)
                     v.group.append(u)
+                    self.current_group_size += 1
                     self.DFS_visit(v, pos)
         u.color = Color.BLACK
 
 
 def dfs_test():
     board_shapes = 'LTLi/iiTL/LTTi/iLli'
+    solution = [3, 0, 2, 0, 2, 2, 1, 1, 3, 0, 2, 3, 3, 0, 1, 3]
     optimal_solution = [3, 0, 2, 0, 2, 2, 1, 1, 3, 0, 2, 3, 2, 0, 1, 3]
     dfs = ShapesDFS(board_shapes, optimal_solution, 4)
     dfs.DFS()
     print(dfs.groups)
     print(dfs.out_of_bounds)
+    print(dfs.max_group_size)
 
 
-dfs_test()
+if __name__ == '__main__':
+    dfs_test()
