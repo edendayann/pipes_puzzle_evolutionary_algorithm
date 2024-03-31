@@ -55,6 +55,7 @@ class Board_UI:
             self.moves_label.config(text=f"Moves: {self.moves}")
             if self.is_done():
                 self.success()
+                return
 
         orientation = self.board.current[matrix_to_vector_pos((row, col), self.size)]
         self.draw_pipe(col, row, self.shapes[row][col], orientation)
