@@ -20,42 +20,20 @@ class BoardEvolution(SimpleEvolution):
         super().__init__(population, statistics=statistics, max_generation=max_generation,
                          termination_checker=termination_checker, max_workers=max_workers)
 
-        # self.communicator = communicator
+    def evolve(self):
+        """
+        Performs the evolutionary run by initializing the random seed, creating the population,
+        performing the evolutionary loop and finally finishing the evolution process
+        """
+        self.initialize()
 
-    # @overrides
-    # def generation_iteration(self, gen):
-    #     """
-    #     Performs one iteration of the evolutionary run, for the current generation
-    #
-    #     Parameters
-    #     ----------
-    #     gen:
-    #         current generation number (for example, generation #100)
-    #
-    #     Returns
-    #     -------
-    #     None.
-    #     """
-    #
-    #     # breed population
-    #     self.breeder.breed(self.population)
-    #
-    #     # Special sequence for BoardEvolution
-    #     caller = threading.Event()
-    #     self.communicator.initialize_movements_done(caller)
-    #     # logging.error(f"==================== Generation in iteration no. {gen} ====================")
-    #     for subpop in self.population.sub_populations:
-    #         for ind in subpop.individuals:
-    #             self.communicator.send_move_request(ind, self.executor)
-    #
-    #     caller.wait()  # waiting for all boards to be played
-    #
-    #     # Continue mostly like SimpleEvolution, only that best_of_gen isn't relevant.
-    #     # Evaluate the entire population and get the best individual
-    #     self.best_of_gen = self.population_evaluator.act(self.population)
-    #
-    #     self.best_of_run_ = self.best_of_gen  # We only care about the best_of_run
-    #
-    #     self.best_of_run_evaluator = self.population.sub_populations[0].evaluator
-    #
-    #     self.worst_of_gen = self.population.sub_populations[0].get_worst_individual()
+        if self.termination_checker.should_terminate(self.population,
+                                                     self.best_of_run_,
+                                                     self.generation_num):
+            self.final_generation_ = 0
+            self.publish('after_generation')
+        else:
+            self.evolve_main_loop()
+
+        self.publish('evolution_finished')
+        return self.best_of_run_.get_vector(), self.best_of_run_.get_augmented_fitness()

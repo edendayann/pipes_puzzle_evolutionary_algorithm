@@ -1,0 +1,492 @@
+generation #0
+subpopulation #0
+best fitness 0.3571
+worst fitness -2.5
+average fitness -1.0219346666666667
+
+generation #1
+subpopulation #0
+best fitness 0.4082
+worst fitness -1.6837
+average fitness -0.4035606666666667
+
+generation #2
+subpopulation #0
+best fitness 0.7653
+worst fitness -0.7653
+average fitness -0.0008429999999999952
+
+generation #3
+subpopulation #0
+best fitness 0.9694
+worst fitness -0.4592
+average fitness 0.2224583333333333
+
+generation #4
+subpopulation #0
+best fitness 0.9694
+worst fitness -0.1531
+average fitness 0.38877366666666663
+
+generation #5
+subpopulation #0
+best fitness 1.0714
+worst fitness 0.051
+average fitness 0.5600353333333333
+
+generation #6
+subpopulation #0
+best fitness 1.7857
+worst fitness 0.102
+average fitness 0.7607143333333333
+
+generation #7
+subpopulation #0
+best fitness 1.9388
+worst fitness 0.1531
+average fitness 0.9471109999999999
+
+generation #8
+subpopulation #0
+best fitness 1.9388
+worst fitness 0.5612
+average fitness 1.1926876666666668
+
+generation #9
+subpopulation #0
+best fitness 2.449
+worst fitness 0.6633
+average fitness 1.5059523333333333
+
+generation #10
+subpopulation #0
+best fitness 2.449
+worst fitness 1.1735
+average fitness 1.788098
+
+generation #11
+subpopulation #0
+best fitness 2.449
+worst fitness 0.7143
+average fitness 1.9627663333333332
+
+generation #12
+subpopulation #0
+best fitness 2.551
+worst fitness 1.4286
+average fitness 2.179601
+
+generation #13
+subpopulation #0
+best fitness 2.8571
+worst fitness 1.4796
+average fitness 2.3804540000000003
+
+generation #14
+subpopulation #0
+best fitness 3.1122
+worst fitness 1.3265
+average fitness 2.4685503333333334
+
+generation #15
+subpopulation #0
+best fitness 3.4184
+worst fitness 1.2245
+average fitness 2.5717676666666667
+
+generation #16
+subpopulation #0
+best fitness 3.6224
+worst fitness 1.7857
+average fitness 2.7703969999999996
+
+generation #17
+subpopulation #0
+best fitness 3.6224
+worst fitness 2.0918
+average fitness 2.9620503333333335
+
+generation #18
+subpopulation #0
+best fitness 3.8776
+worst fitness 2.0918
+average fitness 3.1999770000000005
+
+generation #19
+subpopulation #0
+best fitness 4.0816
+worst fitness 2.0918
+average fitness 3.466311333333333
+
+generation #20
+subpopulation #0
+best fitness 4.0816
+worst fitness 2.7551
+average fitness 3.640961
+
+generation #21
+subpopulation #0
+best fitness 4.2857
+worst fitness 2.5
+average fitness 3.751357333333334
+
+generation #22
+subpopulation #0
+best fitness 4.2857
+worst fitness 2.7551
+average fitness 3.8967783333333332
+
+generation #23
+subpopulation #0
+best fitness 4.3878
+worst fitness 2.8571
+average fitness 4.010372
+
+generation #24
+subpopulation #0
+best fitness 4.4898
+worst fitness 2.6531
+average fitness 4.122106666666667
+
+generation #25
+subpopulation #0
+best fitness 4.6939
+worst fitness 3.1633
+average fitness 4.227212333333333
+
+generation #26
+subpopulation #0
+best fitness 4.898
+worst fitness 3.0612
+average fitness 4.288601
+
+generation #27
+subpopulation #0
+best fitness 4.898
+worst fitness 3.0612
+average fitness 4.409872333333333
+
+generation #28
+subpopulation #0
+best fitness 5.102
+worst fitness 2.9592
+average fitness 4.533680666666666
+
+generation #29
+subpopulation #0
+best fitness 5.3061
+worst fitness 3.2653
+average fitness 4.697965333333333
+
+generation #30
+subpopulation #0
+best fitness 5.4592
+worst fitness 3.2143
+average fitness 4.853754333333333
+
+generation #31
+subpopulation #0
+best fitness 5.4592
+worst fitness 3.3673
+average fitness 4.997964333333333
+
+generation #32
+subpopulation #0
+best fitness 5.7143
+worst fitness 4.1837
+average fitness 5.169551666666666
+
+generation #33
+subpopulation #0
+best fitness 5.8163
+worst fitness 3.5204
+average fitness 5.302215333333334
+
+generation #34
+subpopulation #0
+best fitness 6.0714
+worst fitness 3.5204
+average fitness 5.428920333333335
+
+generation #35
+subpopulation #0
+best fitness 6.0714
+worst fitness 4.2347
+average fitness 5.542349333333333
+
+generation #36
+subpopulation #0
+best fitness 6.1735
+worst fitness 4.2347
+average fitness 5.666829333333333
+
+generation #37
+subpopulation #0
+best fitness 6.1735
+worst fitness 3.9286
+average fitness 5.823959999999999
+
+generation #38
+subpopulation #0
+best fitness 6.3776
+worst fitness 4.6429
+average fitness 5.948107999999999
+
+generation #39
+subpopulation #0
+best fitness 6.4286
+worst fitness 4.1327
+average fitness 6.080938666666666
+
+generation #40
+subpopulation #0
+best fitness 6.5306
+worst fitness 4.4898
+average fitness 6.205962666666666
+
+generation #41
+subpopulation #0
+best fitness 6.7857
+worst fitness 5.2551
+average fitness 6.322816333333334
+
+generation #42
+subpopulation #0
+best fitness 6.8367
+worst fitness 4.2857
+average fitness 6.369243666666668
+
+generation #43
+subpopulation #0
+best fitness 6.8367
+worst fitness 4.7959
+average fitness 6.4409996666666665
+
+generation #44
+subpopulation #0
+best fitness 7.0918
+worst fitness 5.0
+average fitness 6.560541666666667
+
+generation #45
+subpopulation #0
+best fitness 7.0918
+worst fitness 4.5408
+average fitness 6.715291333333333
+
+generation #46
+subpopulation #0
+best fitness 7.1429
+worst fitness 4.898
+average fitness 6.809160666666667
+
+generation #47
+subpopulation #0
+best fitness 7.2959
+worst fitness 5.051
+average fitness 6.910690333333332
+
+generation #48
+subpopulation #0
+best fitness 7.398
+worst fitness 5.102
+average fitness 7.039946333333334
+
+generation #49
+subpopulation #0
+best fitness 7.551
+worst fitness 4.8469
+average fitness 7.072952666666667
+
+generation #50
+subpopulation #0
+best fitness 7.551
+worst fitness 4.8469
+average fitness 7.1144680000000005
+
+generation #51
+subpopulation #0
+best fitness 7.7041
+worst fitness 5.051
+average fitness 7.228070333333333
+
+generation #52
+subpopulation #0
+best fitness 7.8571
+worst fitness 5.051
+average fitness 7.381464666666667
+
+generation #53
+subpopulation #0
+best fitness 7.8571
+worst fitness 5.3571
+average fitness 7.464959333333333
+
+generation #54
+subpopulation #0
+best fitness 8.1633
+worst fitness 5.3061
+average fitness 7.550500666666667
+
+generation #55
+subpopulation #0
+best fitness 8.1633
+worst fitness 6.1735
+average fitness 7.665641333333333
+
+generation #56
+subpopulation #0
+best fitness 8.1633
+worst fitness 5.5102
+average fitness 7.795901666666666
+
+generation #57
+subpopulation #0
+best fitness 8.1633
+worst fitness 6.0204
+average fitness 7.902710666666668
+
+generation #58
+subpopulation #0
+best fitness 8.5204
+worst fitness 6.5306
+average fitness 8.069578333333332
+
+generation #59
+subpopulation #0
+best fitness 8.5204
+worst fitness 7.1429
+average fitness 8.113971333333332
+
+generation #60
+subpopulation #0
+best fitness 8.5204
+worst fitness 6.0714
+average fitness 8.119579666666667
+
+generation #61
+subpopulation #0
+best fitness 8.5204
+worst fitness 5.7143
+average fitness 8.192869
+
+generation #62
+subpopulation #0
+best fitness 8.5204
+worst fitness 6.2245
+average fitness 8.371087333333334
+
+generation #63
+subpopulation #0
+best fitness 8.7755
+worst fitness 6.4796
+average fitness 8.453224
+
+generation #64
+subpopulation #0
+best fitness 8.8265
+worst fitness 6.8878
+average fitness 8.456966999999999
+
+generation #65
+subpopulation #0
+best fitness 8.8265
+worst fitness 6.4796
+average fitness 8.450674333333334
+
+generation #66
+subpopulation #0
+best fitness 8.8265
+worst fitness 7.1939
+average fitness 8.532814
+
+generation #67
+subpopulation #0
+best fitness 9.0816
+worst fitness 6.3265
+average fitness 8.640971999999998
+
+generation #68
+subpopulation #0
+best fitness 9.0816
+worst fitness 7.5
+average fitness 8.773784
+
+generation #69
+subpopulation #0
+best fitness 9.1327
+worst fitness 6.2755
+average fitness 8.780584999999999
+
+generation #70
+subpopulation #0
+best fitness 9.3878
+worst fitness 6.6837
+average fitness 8.867659666666665
+
+generation #71
+subpopulation #0
+best fitness 9.3878
+worst fitness 6.6327
+average fitness 8.982797333333332
+
+generation #72
+subpopulation #0
+best fitness 9.3878
+worst fitness 6.9388
+average fitness 9.041986333333332
+
+generation #73
+subpopulation #0
+best fitness 9.3878
+worst fitness 6.9388
+average fitness 9.110030666666667
+
+generation #74
+subpopulation #0
+best fitness 9.6939
+worst fitness 7.1429
+average fitness 9.231653999999999
+
+generation #75
+subpopulation #0
+best fitness 9.6939
+worst fitness 7.1429
+average fitness 9.311941999999998
+
+generation #76
+subpopulation #0
+best fitness 9.6939
+worst fitness 6.9388
+average fitness 9.308199
+
+generation #77
+subpopulation #0
+best fitness 9.6939
+worst fitness 6.9388
+average fitness 9.355137666666666
+
+generation #78
+subpopulation #0
+best fitness 9.6939
+worst fitness 6.9388
+average fitness 9.393567
+
+generation #79
+subpopulation #0
+best fitness 9.6939
+worst fitness 7.449
+average fitness 9.532847666666667
+
+generation #80
+subpopulation #0
+best fitness 9.6939
+worst fitness 7.1429
+average fitness 9.597300666666666
+
+generation #81
+subpopulation #0
+best fitness 10.0
+worst fitness 8.0612
+average fitness 9.636585666666665
+

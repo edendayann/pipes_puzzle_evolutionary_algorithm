@@ -16,6 +16,6 @@ class BoardCreator(Creator):
 
     def create_individuals(self, n_individuals, higher_is_better):
         individuals = [self.type(fitness=SimpleFitness(higher_is_better=higher_is_better), size=self.size,
-                                 moves_range=self.moves_range) for i in range(n_individuals)]
+                                 moves_range=self.moves_range) for _ in range(n_individuals)]
         self.created_individuals = individuals
         return individuals

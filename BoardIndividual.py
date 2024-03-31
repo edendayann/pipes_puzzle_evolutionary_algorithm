@@ -1,15 +1,11 @@
 from eckity.genetic_encodings.ga.vector_individual import Vector
-from eckity.individual import Individual
 from eckity.fitness.fitness import Fitness
-# from MovementCalculation import MovementCalculation, MovementFactor
-
 import random
 
 
 class BoardIndividual(Vector):
     counter = 1  # First population is irrelevant to the overall calculation.
 
-    # list_of_mov_fact = [MovementFactor.RightDefence, MovementFactor.LeftDefence, MovementFactor.RightAttack, MovementFactor.LeftAttack]
     def __init__(self, fitness: Fitness, size=3, moves_range=4):
         super().__init__(fitness, bounds=(0, 3))
         self.row = size

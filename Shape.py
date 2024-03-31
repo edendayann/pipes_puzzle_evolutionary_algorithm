@@ -6,8 +6,8 @@ class Shape:
         self.state = state
 
     def go_to(self, pos, size):
-        (x, y) = vector_to_matrix_pos(pos, size)
-        return [matrix_to_vector_pos(pos, size) for pos in self.go_to_pos(x, y)]
+        (row, col) = vector_to_matrix_pos(pos, size)
+        return [matrix_to_vector_pos(pos, size) for pos in self.go_to_pos(row, col)]
 
     @abstractmethod
     def go_to_pos(self, x, y):
@@ -15,69 +15,73 @@ class Shape:
 
 
 class L_shape(Shape):
-    def go_to_pos(self, x, y):
+    def go_to_pos(self, row, col):
         if self.state == 0:
-            return [(x, y - 1), (x + 1, y)]
+            return [(row - 1, col), (row, col + 1)]
         elif self.state == 1:
-            return [(x - 1, y), (x, y - 1)]
+            return [(row - 1, col), (row, col - 1)]
         elif self.state == 2:
-            return [(x - 1, y), (x, y + 1)]
+            return [(row + 1, col), (row, col - 1)]
         else:
-            return [(x, y + 1), (x + 1, y)]
+            return [(row, col + 1), (row + 1, col)]
 
     def __str__(self):
         return f"L({self.state})"
 
 
 class T_shape(Shape):
-    def go_to_pos(self, x, y):
+    def go_to_pos(self, row, col):
         if self.state == 0:
-            return [(x - 1, y), (x + 1, y), (x, y + 1)]
+            return [(row, col - 1), (row, col + 1), (row + 1, col)]
         elif self.state == 1:
-            return [(x, y - 1), (x, y + 1), (x + 1, y)]
+            return [(row - 1, col), (row + 1, col), (row, col + 1)]
         elif self.state == 2:
-            return [(x - 1, y), (x + 1, y), (x, y - 1)]
+            return [(row, col - 1), (row - 1, col), (row, col + 1)]
         else:
-            return [(x - 1, y), (x, y - 1), (x, y + 1)]
+            return [(row, col - 1), (row - 1, col), (row + 1, col)]
 
     def __str__(self):
         return f"T({self.state})"
 
 
 class i_shape(Shape):
-    def go_to_pos(self, x, y):
+    def go_to_pos(self, row, col):
         if self.state == 0:
-            return [(x, y + 1)]
+            return [(row + 1, col)]
         elif self.state == 1:
-            return [(x + 1, y)]
+            return [(row, col + 1)]
         elif self.state == 2:
-            return [(x, y - 1)]
+            return [(row - 1, col)]
         else:
-            return [(x - 1, y)]
+            return [(row, col - 1)]
 
     def __str__(self):
         return f"i({self.state})"
 
 
 class l_shape(Shape):
-    def go_to_pos(self, x, y):
+    def go_to_pos(self, row, col):
         if self.state == 0 or self.state == 2:
-            return [(x, y - 1), (x, y + 1)]
+            return [(row - 1, col), (row + 1, col)]
         else:
-            return [(x - 1, y), (x + 1, y)]
+            return [(row, col - 1), (row, col + 1)]
 
     def __str__(self):
         return f"l({self.state})"
 
 
+def shape_go_to(letter, state, row, col):
+    return letter_to_shape(letter)(state).go_to_pos(row - 1, col)
+
+
 def matrix_to_vector_pos(pos, size):
     if pos[0] < 0 or pos[0] >= size or pos[1] < 0 or pos[1] >= size:
         return None
-    return pos[1] * size + pos[0]
+    return pos[0] * size + pos[1]
 
 
 def vector_to_matrix_pos(pos, size):
-    return pos % size, pos // size
+    return pos // size, pos % size
 
 
 def create_shapes_matrix(shapes, states):
